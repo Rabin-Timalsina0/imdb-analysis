@@ -6,7 +6,6 @@ from tensorflow import keras
 
 app = FastAPI()
 
-# Serve static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
